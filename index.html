@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="esp">
+<html lang="ES">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,13 +11,13 @@
       <header>
         <h1>Taller de cerámica</h1>
         <p>Un espacio para crear piezas con tus propias manos.</p>
-        <img src="/src/interface/taller.svg" width="200" height="200" />
+        <img src="/src/interface/taller.svg" width="200" height="200" Alt="" />
         <hr />
         <p>Abierto de lunes a viernes, de 10:00 a 19:00.</p>
       </header>
       <main>
         <section>
-          <h4>Próximos talleres</h4>
+          <h2>Próximos talleres</h2>
           <ul>
             <li>Iniciación — USD 25 · Martes 18:00</li>
             <li>Modelado a mano — USD 20 · Jueves 17:00</li>
@@ -25,16 +25,25 @@
           </ul>
         </section>
         <section>
-          <h6>Consultas e inscripciones</h6>
+          <h2>Consultas e inscripciones</h2>
           <form id="contact-form">
             <div>
-              <input id="name" name="name" type="text" placeholder="Nombre" />
+              <label>
+                Nombre
+                <input id="name" name="name" type="text" placeholder="Nombre" />
+              </label>
             </div>
             <div>
-              <input id="email" name="email" type="email" placeholder="Correo electrónico" />
+              <label>
+                Correo electrónico
+                <input id="email" name="email" type="email" placeholder="Correo electrónico" />
+              </label>
             </div>
             <div>
-              <textarea id="message" name="message" rows="3" placeholder="Tu consulta"></textarea>
+              <label for="message">
+                Tu consulta
+                <textarea id="message" name="message" rows="3" placeholder="Tu consulta"></textarea>
+              </label>
             </div>
             <fieldset>
               <legend>¿Ya asististe a uno de nuestros cursos?</legend>
